@@ -1,0 +1,19 @@
+Creating a job search portal where employers register their company and post the job. 
+Candidates do a job search and apply.
+
+one app for user registration
+one app for employer registration
+one app for user login
+one app for employer login
+one app for user job search and apply
+one app for employer company and job posting
+one app for employer to find the list of candidates applied and screening
+
+job_post_app
+
+one model for Company with Company name, about
+one model for Job ; title, description, years of exp, location, company, skills
+
+
+
+
