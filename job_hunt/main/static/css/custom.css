@@ -1,19 +1,47 @@
-.big-banner{
+.jumbotron.big-banner {
     background-image: url('../img/bluebackground.jpg');
+    height: 250px;
+}
+.jumbotron.container {
+}
+.jumbotron.container.ul {
 }
 
-.dropdown {
-    color: black;
-    
+.fas.fa-laptop {
+    color: white;
+    font-size: 100px;
 }
-.nav-link {
+
+.nav {
+
+}
+#horizontal.nav {
+    position: absolute;
+    top: 70px;
+    left: 600px;
+}
+#horizontal.nav li {
+}
+
+#horizontal.nav li div {}
+
+#horizontal.nav li div > a {
+    color: white;
+    font-size: larger;
+}
+
+#horizontal.nav li div a ul{}
+
+#horizontal.nav li div a ul li{}
+
+.nav.flex-column {}
+
+.nav.flex-column li{}
+
+.nav.flex-column li a {
     color: gray;
 }
-.nav-link.dropdown-toggle {
-    color: white;
-    font: bolder;
-    font-size: large;
-}
+
 
 .progressbar {
     counter-reset: step;
@@ -64,9 +92,3 @@
 }
 
 .container {}
-
-
-.fas.fa-laptop {
-    color: white;
-    font-size: 100px;
-}

@@ -51,6 +51,11 @@
             <input type="submit" class="btn btn-primary" value="Update">
         </form>
     </div>
-    
+    <div class="container">
+            <h5>Registered Companies</h5>
+            {% for company in companys %}
+            {{ company.company_name }}<br>
+            {% endfor %}
+    </div>   
 </body>
 </html>

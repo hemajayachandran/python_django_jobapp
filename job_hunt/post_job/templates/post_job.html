@@ -1,4 +1,5 @@
 {% load static %}
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +15,10 @@
     <div class="page-header">
         <a href="{% url 'post_job' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     </div>
-    <div class="jumbotron big-banner" style="height: 250px">
+    <div class="jumbotron big-banner">
         <div class="container">
             <i class="fas fa-laptop"></i>
-            <ul class="nav" style="position: absolute; left: 600px; top: 70px;">
+            <ul class="nav" id="horizontal">
                 <li class="nav-item">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Home</a>
@@ -69,7 +70,11 @@
         </div>
         <div class="form-group">
             <label for="{{ field.id_for_label }}" class="label">{{ field.label }}</label>
-            {{ field}}
+                {% if field.label == "Job Title" %}
+                    {% render_field field class="form-control" placeholder="Enter job" %}
+                {% else %}
+                    {% render_field field class="form-control" %}
+                {% endif %}
         </div>
         {% endfor %}
         <input type="submit" class="btn btn-primary" value="Next">

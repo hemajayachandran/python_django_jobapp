@@ -10,7 +10,7 @@ class PostJobModel(models.Model):
         ('ARTCULTURE', 'Art & Culture'),
         ('READWRITE', 'Read & Writing'),
     ]
-    job_type = models.CharField(max_length=100, choices=JOB_TYPE)
+    job_type = models.CharField(max_length=100, choices=JOB_TYPE, default=JOB_TYPE)
     OFFERED_SALARY = [
         ('0-3LAKHS', '0 to 3 Lakhs'),
         ('3-6LAKHS', '3 to 6 Lakhs'),
